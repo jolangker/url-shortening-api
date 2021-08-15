@@ -1,0 +1,19 @@
+{
+  "name": "url-shortening-api",
+  "version": "1.0.0",
+  "description": "![Design preview for the Shortly URL shortening API coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.7"
+  },
+  "scripts": {
+    "build": "postcss ./src/tailwind.css -o ./src/style.css --verbose",
+    "watch": "postcss ./src/tailwind.css -o ./src/style.css -w --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

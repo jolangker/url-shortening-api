@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .con {
+    @apply px-6 md:px-8 lg:px-20;
+  }
+  .w-custom {
+    width: calc(100% - 3rem);
+  }
+
+  .nav-link {
+    @apply text-white text-lg font-bold md:text-silver md:text-base md:hover:text-black;
+  }
+
+  .btn {
+    @apply text-white text-lg font-bold  rounded-full hover:opacity-60 md:text-base;
+  }
+
+  .card-img-wrapper {
+    @apply w-20 h-20 rounded-full bg-violet mx-auto relative -top-10 lg:ml-8;
+  }
+
+  .card-img {
+    @apply absolute inset-0 m-auto;
+  }
+
+  .card {
+    @apply bg-white rounded-md border;
+  }
+
+  .card-body {
+    @apply p-6 -mt-8;
+  }
+  .line {
+    @apply w-2 h-20 bg-mermaid mx-auto lg:w-20 lg:h-2 lg:self-center;
+  }
+
+  .footer-nav {
+    @apply text-silver text-opacity-60 hover:text-opacity-100 hover:text-mermaid;
+  }
+
+  .footer-nav-icon {
+    @apply text-white hover:text-mermaid text-2xl;
+  }
+
+  .error {
+    @apply ring-4 ring-red-400 placeholder-red-400 placeholder-opacity-50;
+  }
+
+  .error-message {
+    @apply lg:absolute mt-2 text-red-400 italic text-sm;
+  }
+
+  .loading {
+    @apply opacity-50 cursor-not-allowed hover:opacity-50;
+  }
+
+  .result-wrapper {
+    @apply card flex flex-col lg:flex-row lg:justify-between lg:items-center;
+  }
+
+  .original {
+    @apply border-b p-3 lg:border-b-0;
+  }
+
+  .shorten {
+    @apply flex flex-col p-3 space-y-3 lg:flex-row lg:items-center lg:space-y-0 lg:space-x-6;
+  }
+
+  .shorten-link {
+    @apply text-mermaid;
+  }
+
+  .btn-copy {
+    @apply bg-mermaid text-white py-2 rounded-md font-bold hover:opacity-50 lg:px-6;
+  }
+}
